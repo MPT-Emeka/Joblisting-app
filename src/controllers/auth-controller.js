@@ -46,7 +46,6 @@ exports.signUp = async (req, res) => {
         createdAt: Date.now(),
       }).save();
 
-      //const message = `Thankyou for signing up for Nextgen Job listing service: ${resetUrl}`;
   
       let mail = nodemailer.createTransport({
           service : 'gmail',
@@ -134,7 +133,7 @@ exports.logout = async (req, res) => {
   try {
     const token = "";
     res.cookie("jwt", token, { httpOnly: true, maxAge: 30 },); // decrease max age
-    res.status(200).json({ message: "You've successfully logged out" }) //.redirect("/"); //add homepage url. 
+    res.status(200).json({ message: "You've successfully logged out" }) 
   } catch (error) {
     res.status(400).json({ message: "Account not logged out" });
   }
@@ -251,7 +250,7 @@ exports.resetPasswordController = async (req, res, next) => {
 
 exports.deleteUser = async(req, res)=>{
   try{
-    const deletedUser =  await User.findOneAndDelete({_id: req.user.id }); // check during postman test
+    const deletedUser =  await User.findOneAndDelete({_id: req.user.id }); 
     if(!deletedUser){
       await Token.findOneAndDelete({ userId : req.user.id});
       return res.status(400).json({message: "unable to delete account"})

@@ -4,14 +4,12 @@ const userJobSchema = new mongoose.Schema(
     userId: { 
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-       // autopopulate: true 
     },
       
     jobId: {
         type: mongoose.Schema.Types.ObjectId,
         required: [true, "Enter jobId"],
         ref: "Job",
-       // autopopulate: true
     },
 
     resume: {

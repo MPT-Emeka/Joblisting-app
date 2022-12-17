@@ -1,6 +1,5 @@
 const express = require("express");
 const UserJob = require("../models/userJobModel");
-//const ErrorHandler = require("../helpers/jobErrorHandler");
 const QueryMethod = require("../middlewares/query");
 const Job = require("../models/jobModel");
 const nodemailer = require("nodemailer");
@@ -9,7 +8,7 @@ const User = require("../models/userModel");
 exports.applyJob = async (req, res) => {
     try {
 
-        const user = req.user; // identify the user
+        const user = req.user; // double check to identify the user
         const userID = user._id
         if (!userID) {  
           return res
@@ -92,7 +91,7 @@ exports.updateUserJob = async (req, res) => {
     try {
     
       const id = req.params.id;
-      const user = req.user; // identify the user
+      const user = req.user; 
       const userID = user._id
       if (!userID) { 
         return res
@@ -118,7 +117,7 @@ exports.updateUserJob = async (req, res) => {
        });
 
        let newUser = await User.findById(findUserJob.userId)
-       const jobToReturn = await Job.findById(findUserJob.jobId) // check code and know whether to assign a variable to findUserJob.jobId first. 
+       const jobToReturn = await Job.findById(findUserJob.jobId) 
 
        if (findUserJob.status.includes("shortlisted")) {
         let mail = nodemailer.createTransport({
@@ -145,7 +144,6 @@ exports.updateUserJob = async (req, res) => {
         })
        };
        
-          //const message = `Thankyou for signing up for Nextgen Job listing service: ${resetUrl}`;
         if (findUserJob.status.includes("rejected")) {
         let mail = nodemailer.createTransport({
             service : 'gmail',

@@ -7,7 +7,7 @@ const UserJob = require("../models/userJobModel");
 exports.updateUser = async (req, res) => {
   try {
   
-    const user = req.user; // identify the user
+    const user = req.user;
     const userId = user._id 
     if (!userId) {   
       return res

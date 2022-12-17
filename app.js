@@ -16,8 +16,6 @@ app.use(express.json());
 
 app.use(cookieParser());
 
-// require routes
-
 
 
 
@@ -36,8 +34,6 @@ app.use("/api/v1/auths", authRoutes);
 app.use("/api/v1/users", UserRouter);
 app.use("/api/v1/jobs", jobRouter);
 app.use("/api/v1/userjobs", userJobRouter);
-
-// insert app.use (routers)
 
 
 

@@ -12,7 +12,7 @@ const { createJob, updateJob, getJob, getJobListing, deleteJob, recommendJob } =
 
 router.route("/job").post(auth, checkUser("employer"), createJob).get(getJobListing).delete(auth, checkUser("employer"), deleteJob);
 router.route("/job/:id").get(getJob).put(auth, checkUser("employer"), updateJob);
-router.route("/recommendjob").get(auth, recommendJob);   // check if I'm going add auth later. 
+router.route("/recommendjob").get(auth, recommendJob);   
 
 
 

@@ -56,7 +56,7 @@ exports.updateJob = async (req, res) => {
     try {
     
       const { id }= req.params;
-      const user = req.user; // identify the user
+      const user = req.user; 
       const userId = user._id
       console.log(userId)
       if (!userId) {    

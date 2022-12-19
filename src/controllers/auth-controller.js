@@ -6,7 +6,7 @@ const handleError = require("../helpers/errors");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 const cookie = require("cookie-parser");
-// add mongoose*
+
 
 //cookie-parser expiry date
 const maxAge = 3 * 24 * 60 * 60;

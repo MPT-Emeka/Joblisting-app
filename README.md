@@ -12,6 +12,6 @@ Functional requirements:
 - Users should be able to apply for jobs directly on the website
 
 
-
+System Design Document link = https://docs.google.com/document/d/1d-RIbiLODb7L7ARAXEy4RsJPWFOhDH3Zgjx2-2FwmMw/edit
 
 postman documentation link = https://crimson-meteor-457779.postman.co/workspace/Job-Listing-App~c59accd6-7048-4eaf-b678-a51a7d0ae8af/overview

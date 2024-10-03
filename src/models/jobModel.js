@@ -25,7 +25,7 @@ const jobSchema = mongoose.Schema({
     location : {
         type : String,
         required : [true, "job location is required"],
-        minlength : [10, "GPS LAT/LONG data should more than 10 characters"],
+        minlength : [6, "GPS LAT/LONG data should more than 6 characters"],
         maxlength : [15, "location field should be less than 15 characters"]
     },
     experience : {

@@ -59,7 +59,7 @@ exports.signUp = async (req, res) => {
           from : process.env.HOST_EMAIL,
           to : user.email,
           subject : "On Boarding for Job listing service.",
-          text : `Thankyou for signing up for Nextgen Job listing service ${user.name}`
+          text : `Thank you for signing up for Nextgen Job listing service ${user.name}`
       }
       
       mail.sendMail(mailOptions, function(error, info) {

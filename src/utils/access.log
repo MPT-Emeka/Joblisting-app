@@ -228,3 +228,12 @@
 [0mPATCH /api/v1/userjobs/userjob/6391490f95ecd79eaaed9e6a [33m403[0m 318.534 ms - 47[0m
 [0mPATCH /api/v1/userjobs/userjob/6390ae9f37a89dc69e6c178f [33m404[0m 652.379 ms - 60[0m
 [0mPOST /api/v1/auths/signup [33m400[0m 374.410 ms - 149[0m
+[0mPOST /api/v1/auths/signup [32m201[0m 537.574 ms - 636[0m
+[0mPOST /api/v1/jobs/job [33m403[0m 267.476 ms - 47[0m
+[0mPOST /api/v1/jobs/job [33m403[0m 137.121 ms - 47[0m
+[0mPOST /api/v1/auths/signin [33m401[0m 206.152 ms - 55[0m
+[0mPOST /api/v1/auths/signin [32m200[0m 453.564 ms - 555[0m
+[0mPOST /api/v1/jobs/job [33m403[0m 139.221 ms - 47[0m
+[0mPOST /api/v1/auths/signup [32m201[0m 705.771 ms - 638[0m
+[0mPOST /api/v1/jobs/job [33m403[0m 144.777 ms - 45[0m
+[0mPOST /api/v1/jobs/job [33m400[0m 128.692 ms - 178[0m

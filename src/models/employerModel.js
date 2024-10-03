@@ -42,7 +42,6 @@ const employerSchema = mongoose.Schema({
         required : [true, "user location is required"],
         minlength : [3, "location field should have more than 6 characters"],
         maxlength : [15, "location field should be less than 15 characters"]
-
     },
     role: {
         type: String,

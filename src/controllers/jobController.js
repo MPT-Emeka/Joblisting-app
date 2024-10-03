@@ -24,7 +24,7 @@ exports.createJob = async (req, res) => {
             message: "Forbidden access"
         })
       }
-    
+
         const job = await Job.create({
             title,
             organisation,

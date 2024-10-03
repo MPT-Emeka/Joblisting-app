@@ -227,3 +227,4 @@
 [0mGET /api/v1/users/user?location=lagos [32m200[0m 458.122 ms - 583[0m
 [0mPATCH /api/v1/userjobs/userjob/6391490f95ecd79eaaed9e6a [33m403[0m 318.534 ms - 47[0m
 [0mPATCH /api/v1/userjobs/userjob/6390ae9f37a89dc69e6c178f [33m404[0m 652.379 ms - 60[0m
+[0mPOST /api/v1/auths/signup [33m400[0m 374.410 ms - 149[0m

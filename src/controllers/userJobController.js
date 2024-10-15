@@ -84,9 +84,6 @@ exports.applyJob = async (req, res) => {
 };
 
 
-
-
-
 exports.updateUserJob = async (req, res) => {
     try {
     
@@ -184,9 +181,6 @@ exports.updateUserJob = async (req, res) => {
   };
 
 
-
-
-
 exports.getUserJob = async (req, res) => {
   try {
 
@@ -203,7 +197,7 @@ exports.getUserJob = async (req, res) => {
     if (user.role.includes("admin")) {
          return response.status(403).json({
              status: false,
-             message: "only employers and users can access Userjobs"
+             message: "only employers/users can access applications"
          })
     }
 
@@ -224,8 +218,6 @@ exports.getUserJob = async (req, res) => {
       return res.status(400).json( error.message );
     }
 };
-
-
 
 
 
@@ -263,11 +255,6 @@ exports.getAllUserJobs = async (req, res) => {
 };
 
 
-
-
-
-
-
 exports.deleteUserJob = async (request, response) => {
   try {
 
@@ -284,12 +271,12 @@ exports.deleteUserJob = async (request, response) => {
     if (findUserJob) {
       return response.status(204).send({
         status: true,
-        message: "UserJob deleted successfully"
+        message: "application deleted successfully"
       });
     } else {
       return response.status(404).send({
         status: false,
-        message: "UserJob not found",
+        message: "application not found",
       });
     }
   } catch (error) {

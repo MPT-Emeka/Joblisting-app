@@ -237,3 +237,16 @@
 [0mPOST /api/v1/auths/signup [32m201[0m 705.771 ms - 638[0m
 [0mPOST /api/v1/jobs/job [33m403[0m 144.777 ms - 45[0m
 [0mPOST /api/v1/jobs/job [33m400[0m 128.692 ms - 178[0m
+[0mPOST /api/v1/jobs/job [33m400[0m 214.872 ms - 177[0m
+[0mPOST /api/v1/jobs/job [32m201[0m 357.017 ms - 438[0m
+[0mPOST /api/v1/userjobs/userjob [32m201[0m 1310.270 ms - 446[0m
+[0mGET /api/v1/userjobs/userjob/6391490f95ecd79eaaed9e6a [33m400[0m 2.244 ms - 57[0m
+[0mGET /api/v1/userjobs/userjob/6391490f95ecd79eaaed9e6a [32m200[0m 340.440 ms - 396[0m
+[0mGET /api/v1/userjobs/userjob/66ff1b49c19e7cef7091bae8 [33m404[0m 229.013 ms - 50[0m
+[0mGET /api/v1/userjobs/userjob/66ff1fc3c19e7cef7091baee [32m200[0m 361.244 ms - 392[0m
+[0mGET /api/v1/users/userprofile [33m400[0m 1.528 ms - 57[0m
+[0mGET /api/v1/users/userprofile [32m200[0m 453.568 ms - 477[0m
+[0mGET /api/v1/users/userprofile [33m400[0m 10.963 ms - 57[0m
+[0mGET /api/v1/users/userprofile [33m400[0m 3.773 ms - 57[0m
+[0mPOST /api/v1/auths/signin [32m200[0m 270.314 ms - 555[0m
+[0mGET /api/v1/users/userprofile [32m200[0m 422.210 ms - 477[0m
